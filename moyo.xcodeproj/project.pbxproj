@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3369BADF2BD4862600BC976D /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369BADE2BD4862600BC976D /* TabbarController.swift */; };
+		3369BAE52BD489DE00BC976D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369BAE42BD489DE00BC976D /* ProfileViewController.swift */; };
+		3369BAE82BD489F300BC976D /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369BAE72BD489F300BC976D /* NewsViewController.swift */; };
+		3369BAEA2BD48A0200BC976D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369BAE92BD48A0200BC976D /* MapViewController.swift */; };
 		33A13DD52BD1675C0045C9E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A13DD42BD1675C0045C9E1 /* AppDelegate.swift */; };
 		33A13DD72BD1675C0045C9E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A13DD62BD1675C0045C9E1 /* SceneDelegate.swift */; };
 		33A13DD92BD1675C0045C9E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A13DD82BD1675C0045C9E1 /* ViewController.swift */; };
 		33A13DDC2BD1675C0045C9E1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 33A13DDB2BD1675C0045C9E1 /* Base */; };
 		33A13DDE2BD1675C0045C9E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A13DDD2BD1675C0045C9E1 /* Assets.xcassets */; };
 		33A13DE12BD1675C0045C9E1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 33A13DE02BD1675C0045C9E1 /* Base */; };
+		33A13DEC2BD420A00045C9E1 /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A13DEB2BD420A00045C9E1 /* Tabbar.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3369BADE2BD4862600BC976D /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		3369BAE42BD489DE00BC976D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3369BAE72BD489F300BC976D /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		3369BAE92BD48A0200BC976D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		33A13DD12BD1675C0045C9E1 /* moyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moyo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A13DD42BD1675C0045C9E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33A13DD62BD1675C0045C9E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,7 @@
 		33A13DDD2BD1675C0045C9E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33A13DE02BD1675C0045C9E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33A13DE22BD1675C0045C9E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33A13DEB2BD420A00045C9E1 /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3369BAE02BD4891200BC976D /* map */ = {
+			isa = PBXGroup;
+			children = (
+				3369BAE92BD48A0200BC976D /* MapViewController.swift */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		3369BAE12BD4891900BC976D /* news */ = {
+			isa = PBXGroup;
+			children = (
+				3369BAE72BD489F300BC976D /* NewsViewController.swift */,
+			);
+			path = news;
+			sourceTree = "<group>";
+		};
+		3369BAE32BD4898500BC976D /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				3369BAE42BD489DE00BC976D /* ProfileViewController.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
 		33A13DC82BD1675C0045C9E1 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +90,44 @@
 		33A13DD32BD1675C0045C9E1 /* moyo */ = {
 			isa = PBXGroup;
 			children = (
-				33A13DD42BD1675C0045C9E1 /* AppDelegate.swift */,
-				33A13DD62BD1675C0045C9E1 /* SceneDelegate.swift */,
-				33A13DD82BD1675C0045C9E1 /* ViewController.swift */,
-				33A13DDA2BD1675C0045C9E1 /* Main.storyboard */,
+				33A13DE82BD41FD20045C9E1 /* Application */,
+				33A13DE92BD41FE10045C9E1 /* Main */,
+				33A13DEA2BD420760045C9E1 /* Tabbar */,
 				33A13DDD2BD1675C0045C9E1 /* Assets.xcassets */,
 				33A13DDF2BD1675C0045C9E1 /* LaunchScreen.storyboard */,
 				33A13DE22BD1675C0045C9E1 /* Info.plist */,
 			);
 			path = moyo;
+			sourceTree = "<group>";
+		};
+		33A13DE82BD41FD20045C9E1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				33A13DD42BD1675C0045C9E1 /* AppDelegate.swift */,
+				33A13DD62BD1675C0045C9E1 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		33A13DE92BD41FE10045C9E1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				33A13DD82BD1675C0045C9E1 /* ViewController.swift */,
+				33A13DDA2BD1675C0045C9E1 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		33A13DEA2BD420760045C9E1 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				3369BAE02BD4891200BC976D /* map */,
+				3369BAE12BD4891900BC976D /* news */,
+				3369BAE32BD4898500BC976D /* profile */,
+				33A13DEB2BD420A00045C9E1 /* Tabbar.storyboard */,
+				3369BADE2BD4862600BC976D /* TabbarController.swift */,
+			);
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A13DEC2BD420A00045C9E1 /* Tabbar.storyboard in Resources */,
 				33A13DDE2BD1675C0045C9E1 /* Assets.xcassets in Resources */,
 				33A13DE12BD1675C0045C9E1 /* Base in Resources */,
 				33A13DDC2BD1675C0045C9E1 /* Base in Resources */,
@@ -139,8 +203,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				33A13DD92BD1675C0045C9E1 /* ViewController.swift in Sources */,
+				3369BADF2BD4862600BC976D /* TabbarController.swift in Sources */,
+				3369BAE52BD489DE00BC976D /* ProfileViewController.swift in Sources */,
+				3369BAE82BD489F300BC976D /* NewsViewController.swift in Sources */,
 				33A13DD52BD1675C0045C9E1 /* AppDelegate.swift in Sources */,
 				33A13DD72BD1675C0045C9E1 /* SceneDelegate.swift in Sources */,
+				3369BAEA2BD48A0200BC976D /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,9 +363,12 @@
 				DEVELOPMENT_TEAM = 3385ZL3W83;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = moyo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "моё";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,6 +378,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = moyo.moyo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,9 +398,12 @@
 				DEVELOPMENT_TEAM = 3385ZL3W83;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = moyo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "моё";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,6 +413,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = moyo.moyo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
